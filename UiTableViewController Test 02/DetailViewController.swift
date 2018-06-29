@@ -21,7 +21,6 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var local1: String = ""
     var tel1: String = ""
     var menu: String = ""
-
     var type: String = ""
     
     
@@ -69,6 +68,10 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath)
             cell.textLabel?.text = "메뉴 : " + menu
+            return cell
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath)
+            cell.textLabel?.text = "음식type : " + type
             return cell
         default :
             let cell = tableView.dequeueReusableCell(withIdentifier: "mapCell", for: indexPath) as! MapTableViewCell
