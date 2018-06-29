@@ -75,8 +75,23 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 destinationController.tel = tel1
             }
         }
-        
     }
-
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        let myAlert = UIAlertController(title: "Call", message: "전화 거시겠습니까?", preferredStyle: .alert)
+        
+        //세번째 인자를 클로져 사용
+        //후행 클로져(Trailing Closure)
+        let okAction = UIAlertAction(title: "전화걸기", style: .default, handler: {(action: UIAlertAction) -> Void in
+        })
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: { (action: UIAlertAction) -> Void in })
+        
+        
+        myAlert.addAction(okAction)
+        myAlert.addAction(cancelAction)
+        
+        present(myAlert, animated: true, completion: nil)
+    }
+    
 }
 
