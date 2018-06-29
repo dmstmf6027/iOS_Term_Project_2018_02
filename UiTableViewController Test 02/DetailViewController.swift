@@ -8,22 +8,37 @@
 
 import UIKit
 import MapKit
+var foodmenu = ["늘해랑1.png", "늘해랑2.png"]
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate {
 
     @IBOutlet weak var detailTableView: UITableView!
     @IBOutlet weak var cellImageView: UIImageView!
-    
+    @IBOutlet weak var pageControl: UIPageControl!
     
     var cellImage: String = ""
     var name: String = ""
     var local1: String = ""
     var tel1: String = ""
     var menu: String = ""
+
     var type: String = ""
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pageControl.numberOfPages = images.count
+        
+        pageControl.currentPage = 0
+        
+        pageControl.pageIndicatorTintColor = UIColor.green
+        
+        pageControl.currentPageIndicatorTintColor = UIColor.red
+        
+        cellImageView.image = UIImage(named: foodmenu[0])
+        
         // delegate connection
         detailTableView.delegate = self
         detailTableView.dataSource = self
@@ -92,6 +107,11 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         present(myAlert, animated: true, completion: nil)
     }
+    
+    @IBAction func pageChanged(_ sender: Any) {
+        cellImageView.image = UIImage(named: images[pageControl.currentPage])
+    }
+    
     
 }
 

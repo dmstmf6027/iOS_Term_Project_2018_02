@@ -191,6 +191,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Orm-ho-oAa">
+                                <rect key="frame" x="168" y="310" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="rTk-ZX-IXD" eventType="valueChanged" id="0pf-CD-dbb"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -206,7 +213,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="G4c-sD-j8J">
-                        <barButtonItem key="leftBarButtonItem" title="Call" id="7Km-1u-CNb">
+                        <barButtonItem key="rightBarButtonItem" title="Call" id="7Km-1u-CNb">
                             <connections>
                                 <action selector="buttonPressed:" destination="rTk-ZX-IXD" id="TgL-rJ-FvG"/>
                             </connections>
@@ -216,6 +223,7 @@
                     <connections>
                         <outlet property="cellImageView" destination="9YQ-Gp-nb7" id="gcz-ID-ghm"/>
                         <outlet property="detailTableView" destination="Bgr-FQ-YRN" id="vwU-gV-Ry7"/>
+                        <outlet property="pageControl" destination="Orm-ho-oAa" id="GQc-xf-Cwx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTd-kS-vSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -299,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ync-88-yGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2769" y="646"/>
+            <point key="canvasLocation" x="2809" y="645"/>
         </scene>
     </scenes>
     <resources>

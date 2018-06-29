@@ -19,6 +19,8 @@
 		644A056920E5D7C100088D91 /* 홍콩반점.png in Resources */ = {isa = PBXBuildFile; fileRef = 644A056320E5D7C000088D91 /* 홍콩반점.png */; };
 		644A056A20E5D7C100088D91 /* 번개반점.png in Resources */ = {isa = PBXBuildFile; fileRef = 644A056420E5D7C100088D91 /* 번개반점.png */; };
 		644A056C20E5D81700088D91 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644A056B20E5D81700088D91 /* ImageViewController.swift */; };
+		644A056F20E5F7A300088D91 /* 늘해랑2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 644A056D20E5F7A300088D91 /* 늘해랑2.jpg */; };
+		644A057020E5F7A300088D91 /* 늘해랑1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 644A056E20E5F7A300088D91 /* 늘해랑1.jpg */; };
 		648FAC0520B29D5B00ACCE56 /* FoodStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648FAC0420B29D5B00ACCE56 /* FoodStoreTableViewCell.swift */; };
 		741C17E520AC061400FE6E1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741C17E420AC061400FE6E1E /* AppDelegate.swift */; };
 		741C17EA20AC061400FE6E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741C17E820AC061400FE6E1E /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 		644A056320E5D7C000088D91 /* 홍콩반점.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홍콩반점.png"; sourceTree = "<group>"; };
 		644A056420E5D7C100088D91 /* 번개반점.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "번개반점.png"; sourceTree = "<group>"; };
 		644A056B20E5D81700088D91 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		644A056D20E5F7A300088D91 /* 늘해랑2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "늘해랑2.jpg"; path = "../../../../Desktop/늘해랑2.jpg"; sourceTree = "<group>"; };
+		644A056E20E5F7A300088D91 /* 늘해랑1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "늘해랑1.jpg"; path = "../../../../Desktop/늘해랑1.jpg"; sourceTree = "<group>"; };
 		648FAC0420B29D5B00ACCE56 /* FoodStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewCell.swift; sourceTree = "<group>"; };
 		741C17E120AC061400FE6E1E /* UiTableViewController Test 02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UiTableViewController Test 02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		741C17E420AC061400FE6E1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		644A055E20E5D7B600088D91 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				644A056E20E5F7A300088D91 /* 늘해랑1.jpg */,
+				644A056D20E5F7A300088D91 /* 늘해랑2.jpg */,
 				644A056120E5D7C000088D91 /* 늘해랑.png */,
 				644A056420E5D7C100088D91 /* 번개반점.png */,
 				644A056020E5D7C000088D91 /* 아딸.png */,
@@ -181,8 +187,10 @@
 			files = (
 				741C17EF20AC061400FE6E1E /* LaunchScreen.storyboard in Resources */,
 				644A056920E5D7C100088D91 /* 홍콩반점.png in Resources */,
+				644A057020E5F7A300088D91 /* 늘해랑1.jpg in Resources */,
 				741C17EC20AC061400FE6E1E /* Assets.xcassets in Resources */,
 				644A056820E5D7C100088D91 /* 토마토 도시락.png in Resources */,
+				644A056F20E5F7A300088D91 /* 늘해랑2.jpg in Resources */,
 				644A056620E5D7C100088D91 /* 아딸.png in Resources */,
 				644A056720E5D7C100088D91 /* 늘해랑.png in Resources */,
 				741C17EA20AC061400FE6E1E /* Main.storyboard in Resources */,
